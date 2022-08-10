@@ -5,115 +5,201 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&display=swap" rel="stylesheet">
-    <title>ADiseñadora</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;0,6..96,800;0,6..96,900;1,6..96,400;1,6..96,500;1,6..96,600;1,6..96,700;1,6..96,800;1,6..96,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>ADesignuy / Proyectos</title>
 </head>
+
 <body>
+<div class="bloque-menu"></div> <!-- bloque para separar barra lateral de contenido -->
 
-    <!--Menu-->
-
-
-<!--                      NO COLAPSAR
-/ Este div no permite que mi contenido se superponga a mi menu fixed / -->
-<div class="espacio-lateral-bloque"></div>  
-
-<div class="espacio-lateral">
-    <header>
-        <div class="logo">
-            <figure>
-                <img src="../img/logo.png" alt="">
-            </figure>
-        </div>
-        <nav>
+<!-- COMIENZO BARRA LATERAL -->
+    <header class="header-desktop">
+        <img class="logo" src="../img/logosvg.svg" alt="Icono de Adesignuy">
+    
+        <!-- MENU -->
+        <nav class="menu">
             <ul>
                 <li>
+                    <img src="../img/house-icon.svg" alt="">
                     <a href="../index.html">Inicio</a>
                 </li>
+    
                 <li>
-                    <a href="./blog.html">Blog</a>
+                    <img src="../img/blog-icon.svg" alt="Icono de Blog">
+                    <a href="blog.html">Blog</a>
                 </li>
+    
                 <li>
-                    <a href="./info.html">Sobre mi</a>
+                    <img src="../img/sobremi-icon.svg" alt="Icono Sobre Mi">
+                    <a href="info.html">Sobre mi</a>
                 </li>
-                <li>
+    
+                <li class="active">
+                    <img src="../img/proyectos-icon.svg" alt="Icono de Proyectos">
                     <a href="#">Proyectos</a>
                 </li>
+    
                 <li>
-                    <a href="./contacto.html">Contacto</a>
+                    <img src="../img/contacto-icon.svg" alt="Icono contacto">
+                    <a href="contacto.html">Contacto</a>
                 </li>
             </ul>
         </nav>
+        <!-- FIN MENU -->
+    
+        <!-- MENU FILTROS -->
+        <nav class="filtros">
+            <article>
+                <img src="../img/filtros-icon.svg" alt="Icono de Filtrar">
+                <h4>Filtrar</h4>
+            </article>
+            <ul>
+                <li>
+                    <a href="">Diseño Web</a>
+                </li>
+
+                <li>
+                    <a href="">Diseño UX</a>
+                </li>
+
+                <li>
+                    <a href="">Diseño UI</a>
+                </li>
+
+                <li>
+                    <a href="">Tipografía</a>
+                </li>
+                
+                <li>
+                    <a href="">Ilustración</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- FIN MENU FILTROS -->
+
+        <!-- FOOTER Y REDES -->
+        <footer>
+            <article class="card-index">
+                <h4>ADESIGNUY</h4>
+                <p>¡Hola! Me llamo Dai, soy diseñadora gráfica especializada en el Diseño UX & UI y este es mi portfolio.</p>
+                <div class="card-index-foto"></div>
+                <a href="">CONOCE MI HISTORIA</a>
+            </article>
+
+            <article class="redes">
+                <img src="../img/instagram.png" alt="Logo de Instagram">
+                <img src="../img/linkedin.png" alt="Logo de Linkedin">
+                <img src="../img/dribbble.png" alt="Lodo de Dribbble">
+                <img src="../img/behance.png" alt="Logo de Behance">
+                <img src="../img/medium.png" alt="Logo de Medium">
+                <img src="../img/github.png" alt="Logo de Github">
+            </article>
+        </footer>
+        <!-- FIN FOOTER Y REDES -->
     </header>
+<!-- FIN BARRA LATERAL -->
 
-        <!-- Filtros de busqueda -->
- 
-    <section class="nav-filtros">
-        <article>
-            <a href="#">Filtros</a>
-            <a href="#">Diseño web</a>
-            <a href="#">Diseño UX</a>
-            <a href="#">Diseño UI</a>
-            <a href="#">Tipografía</a>
-            <a href="#">Ilustración</a>
-        </article>
-    </section>
+<!-- MENU MOBILE -->
+<header class="header-mobile">
+    <img class="logo" src="../img/logosvg.svg" alt="Icono de Adesignuy">
+    <ul>
+        <li>
+            <a href="../index.html">Inicio</a>
+        </li>
 
-    <!-- Redes sociales -->
-    <footer>
-        <article>
-            <img src="../img/instagram.png" alt="Instagram">
-            <img src="../img/medium.png" alt="Medium">
-            <img src="../img/dribbble.png" alt="Dribbble">
-            <img src="../img/behance.png" alt="Behance">
-            <img src="../img/linkedin.png" alt="Linkdin">
-            <img src="../img/github.png" alt="Github">
-        </article>
-    </footer>
-</div>
- 
-<div class="proyectos">
-    <section>
-        <h1>Proyectos 2022</h1>
-       <article>
-        <figure>
-            <img src="../img/4.png" alt="Foto de proyecto aplicacion mobile">
-        </figure>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, iure, facere deleniti recusandae qui dolores amet nihil nulla fugiat tenetur modi! Quae, ullam! Fugit culpa voluptas suscipit, repellendus porro dignissimos!
-        </p>
-       </article>
+        <li>
+            <a href="blog.html">Blog</a>
+        </li>
 
-       <article class="iconos">
-        <figure>
-            <img src="../img/a.png" alt="Tipografias">
-        </figure>
-        <p>
-            <span>Ui - KIT</span>Familia Tipográfica
-        </p>
-       </article>
-       
-       <article>
-        <figure>
-            <img src="../img/7.png" alt="Foto de proyecto aplicacion mobile">
-        </figure>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, iure, facere deleniti recusandae qui dolores amet nihil nulla fugiat tenetur modi! Quae, ullam! Fugit culpa voluptas suscipit, repellendus porro dignissimos!
-        </p>
-       </article>
+        <li>
+            <a href="info.html">Sobre mi</a>
+        </li>
 
-       <article class="iconos">
-        <figure>
-            <img src="../img/a.png" alt="Tipografias">
-        </figure>
-        <p>
-            <span>Ui - KIT</span>Familia Tipográfica
-        </p>
-       </article>
-    </section>
-</div>
+        <li class="active">
+            <a href="#">Proyectos</a>
+        </li>
 
+        <li>
+            <a href="contacto.html">Contacto</a>
+        </li>
+    </ul>
+</header>
 
+<!-- CAROUSEL -->
+<section class="container-proyectos">
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../img/banner1.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="../img/banner2.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="../img/banner3.png" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+<!-- CARDS PROYECTOS -->
+    <article class="cards-proyectos">
+      <div class="card card-background-proyectos" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">TITULO DE PROYECTO ACA</h5>
+            <p class="card-text">
+                Descripcion de proyecto it is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+            </p>
+            <a href="#" class="card-link">VER PROYECTO COMPLETO ACÁ</a>
+        </div>
+      </div>
+
+      <div class="card card-background-proyectos" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">TITULO DE PROYECTO ACA</h5>
+            <p class="card-text">
+                Descripcion de proyecto it is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+            </p>
+            <img src="../img/8-2.png" alt="">
+            <a href="#" class="card-link">VER PROYECTO COMPLETO ACÁ</a>
+        </div>
+      </div>
+
+      <div class="card card-background-proyectos" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">TITULO DE PROYECTO ACA</h5>
+            <p class="card-text">
+                Descripcion de proyecto it is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+            </p>
+            <a href="#" class="card-link">VER PROYECTO COMPLETO ACÁ</a>
+        </div>
+      </div>
+
+      <div class="card card-background-proyectos" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">TITULO DE PROYECTO ACA</h5>
+            <p class="card-text">
+                Descripcion de proyecto it is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+            </p>
+            <img src="../img/1-2.jpg" alt="">
+          <a href="#" class="card-link">VER PROYECTO COMPLETO ACÁ</a>
+        </div>
+      </div>
+    </article>
+</section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
+
+

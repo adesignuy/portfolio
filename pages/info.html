@@ -5,102 +5,211 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&display=swap" rel="stylesheet">
-    <title>ADiseñadora</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;0,6..96,800;0,6..96,900;1,6..96,400;1,6..96,500;1,6..96,600;1,6..96,700;1,6..96,800;1,6..96,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>ADesignuy / Sobre mi</title>
 </head>
+
 <body>
- 
-    <!--Menu-->
-
-
-<!--                      NO COLAPSAR
-/ Este div no permite que mi contenido se superponga a mi menu fixed / -->
-<div class="espacio-lateral-bloque"></div>  
-
-<div class="espacio-lateral">
-    <header>
-        <div class="logo">
-            <figure>
-                <img src="../img/logo.png" alt="">
-            </figure>
-        </div>
-        <nav>
+<div class="bloque-menu bloque-menu-info"></div> <!-- bloque para separar barra lateral de contenido -->
+    
+<!-- COMIENZO BARRA LATERAL -->
+    <header class="header-desktop">
+        <img class="logo" src="../img/logosvg.svg" alt="Icono de Adesignuy">
+    
+        <!-- MENU -->
+        <nav class="menu">
             <ul>
                 <li>
+                    <img src="../img/house-icon.svg" alt="">
                     <a href="../index.html">Inicio</a>
                 </li>
+    
                 <li>
-                    <a href="./blog.html">Blog</a>
+                    <img src="../img/blog-icon.svg" alt="Icono de Blog">
+                    <a href="blog.html">Blog</a>
                 </li>
-                <li>
+    
+                <li class="active">
+                    <img src="../img/sobremi-icon.svg" alt="Icono Sobre Mi">
                     <a href="#">Sobre mi</a>
                 </li>
+    
                 <li>
-                    <a href="./proyectos.html">Proyectos</a>
+                    <img src="../img/proyectos-icon.svg" alt="Icono de Proyectos">
+                    <a href="proyectos.html">Proyectos</a>
                 </li>
+    
                 <li>
-                    <a href="./contacto.html">Contacto</a>
+                    <img src="../img/contacto-icon.svg" alt="Icono contacto">
+                    <a href="contacto.html">Contacto</a>
                 </li>
             </ul>
         </nav>
+        <!-- FIN MENU -->
+    
+        <!-- MENU FILTROS -->
+        <nav class="filtros">
+            <article>
+                <img src="../img/filtros-icon.svg" alt="Icono de Filtrar">
+                <h4>Filtrar</h4>
+            </article>
+            <ul>
+                <li>
+                    <a href="">Diseño Web</a>
+                </li>
+
+                <li>
+                    <a href="">Diseño UX</a>
+                </li>
+
+                <li>
+                    <a href="">Diseño UI</a>
+                </li>
+
+                <li>
+                    <a href="">Tipografía</a>
+                </li>
+                
+                <li>
+                    <a href="">Ilustración</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- FIN MENU FILTROS -->
+
+        <!-- FOOTER Y REDES -->
+        <footer>
+            <article class="card-index">
+                <h4>ADESIGNUY</h4>
+                <p>¡Hola! Me llamo Dai, soy diseñadora gráfica especializada en el Diseño UX & UI y este es mi portfolio.</p>
+                <div class="card-index-foto"></div>
+                <a href="">CONOCE MI HISTORIA</a>
+            </article>
+
+            <article class="redes">
+                <img src="../img/instagram.png" alt="Logo de Instagram">
+                <img src="../img/linkedin.png" alt="Logo de Linkedin">
+                <img src="../img/dribbble.png" alt="Lodo de Dribbble">
+                <img src="../img/behance.png" alt="Logo de Behance">
+                <img src="../img/medium.png" alt="Logo de Medium">
+                <img src="../img/github.png" alt="Logo de Github">
+            </article>
+        </footer>
+        <!-- FIN FOOTER Y REDES -->
     </header>
+<!-- FIN BARRA LATERAL -->
 
-        <!-- Filtros de busqueda -->
- 
-    <section class="nav-filtros">
-        <article>
-            <a href="#">Filtros</a>
-            <a href="#">Diseño web</a>
-            <a href="#">Diseño UX</a>
-            <a href="#">Diseño UI</a>
-            <a href="#">Tipografía</a>
-            <a href="#">Ilustración</a>
+<!-- MENU MOBILE -->
+<header class="header-mobile">
+    <img class="logo" src="../img/logosvg.svg" alt="Icono de Adesignuy">
+    <ul>
+        <li>
+            <a href="../index.html">Inicio</a>
+        </li>
+
+        <li>
+            <a href="blog.html">Blog</a>
+        </li>
+
+        <li class="active">
+            <a href="#">Sobre mi</a>
+        </li>
+
+        <li>
+            <a href="proyectos.html">Proyectos</a>
+        </li>
+
+        <li>
+            <a href="contacto.html">Contacto</a>
+        </li>
+    </ul>
+</header>
+
+<!-- COMIENZO SECTION SOBRE MI -->
+<div class="container-sobre-mi">
+    <section class="sobre-mi">
+        <article class="estudios">
+            <div class="estudios-info">
+                <img src="../img/ort.jpg" alt="Icono ORT Diseño y Comunicación - Uruguay">
+                <div>
+                    <h4>ORT Comunicación y Diseño</h4>
+                    <h5>Licenciatura en Diseño Gráfico</h5>
+                    <p>
+                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                    </p>
+                </div>
+            </div>
+            <div class="estudios-info">
+                <img src="../img/coder.jpg" alt="Icono Coderhouse">
+                <div>
+                    <h4>CODERHOUSE</h4>
+                    <h5>Diseño UX/UI + Research y Writing</h5>
+                    <p>
+                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                    </p>
+                </div>
+            </div>
+            <div class="estudios-info">
+                <img src="../img/coder.jpg" alt="Icono Coderhouse">
+                <div>
+                    <h4>CODERHOUSE</h4>
+                    <h5>Desarrollo Full Stack</h5>
+                    <p>
+                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <article class="herramientas">
+            <div class="lenguajes">
+                <img src="../img/html-icon.svg" alt="">
+                <img src="../img/css-icon.svg" alt="">
+            </div>
+
+            <div class="herramientas-info">
+                <p>
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.
+                </p>
+            </div>
+
+            <div class="herramientas-iconos">
+                <p>Principales herramientas usadas</p>
+                <span>
+                    <img src="../img/illustrator.jpg" alt="Logo de Illustrator">
+                    <img src="../img/photoshop.jpg" alt="Logo de Photoshop">
+                    <img src="../img/aftereffect.jpg" alt="Logo de After Effects">
+                    <img src="../img/fontlab.jpg" alt="Logo de Fontlab">
+                    <img src="../img/figma.png" alt="Logo de Figma">
+                    <img src="../img/miro.jpg" alt="Logo de Miro">
+                    <img src="../img/whimsical.jpg" alt="Logo de Whimsical">
+                </span>
+            </div>
         </article>
     </section>
 
-    <!-- Redes sociales -->
-    <footer>
-        <article>
-            <img src="../img/instagram.png" alt="Instagram">
-            <img src="../img/medium.png" alt="Medium">
-            <img src="../img/dribbble.png" alt="Dribbble">
-            <img src="../img/behance.png" alt="Behance">
-            <img src="../img/linkedin.png" alt="Linkdin">
-            <img src="../img/github.png" alt="Github">
-        </article>
-    </footer>
-</div>
-   
-<div class="sobre-mi">
-    <h1>Sobre mi</h1>
-    <section>
-        <figure>
-            <img src="../img/dai.jpg" alt="Foto de perfil">
-        </figure>
-       <article>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero et deserunt eligendi in? Eos vel iste molestiae iure, suscipit labore tempora. Quas deleniti architecto hic consequuntur earum alias asperiores vero.</p>
-       </article>
-    </section>
-    <section>
-        <figure>
-            <img src="../img/ort.jpg" alt="Universidad ORT Uruguay">
-        </figure>
-       <article>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero et deserunt eligendi in? Eos vel iste molestiae iure, suscipit labore tempora. Quas deleniti architecto hic consequuntur earum alias asperiores vero.</p>
-       </article>
-    </section>
-    <section>
-        <figure>
-            <img src="../img/coder.png" alt="Cursos Coder">
-        </figure>
-       <article>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero et deserunt eligendi in? Eos vel iste molestiae iure, suscipit labore tempora. Quas deleniti architecto hic consequuntur earum alias asperiores vero.</p>
-       </article>
+    <section class="sobre-mi-personal">
+        <h1>AD<span>ESIGNUY</span></h1>
+        <p class="sobre-mi-texto">
+            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. 
+        </p>
+        <img src="../img/logosvg.svg" alt="">
+        <p class="sobre-mi-nombre">
+            Abigail Daiana
+        </p>
+        <p>
+            Diseñadora Uruguaya
+        </p>
     </section>
 </div>
+<!-- FIN SECTION SOBRE MI -->
 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
-
 </html>
+
+

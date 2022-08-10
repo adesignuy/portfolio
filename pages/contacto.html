@@ -4,163 +4,170 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&display=swap" rel="stylesheet">
-    <title>ADiseñadora</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;0,6..96,800;0,6..96,900;1,6..96,400;1,6..96,500;1,6..96,600;1,6..96,700;1,6..96,800;1,6..96,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>ADesignuy / Contacto</title>
 </head>
+
 <body>
-
-    <!--Menu-->
-
-
-<!--                      NO COLAPSAR
-/ Este div no permite que mi contenido se superponga a mi menu fixed / -->
-<div class="espacio-lateral-bloque"></div>  
-
-<div class="espacio-lateral">
-
-    <header class="desktop-menu">
-        <div class="logo">
-            <figure>
-                <img src="../img/logo.png" alt="">
-            </figure>
-        </div>
-        <nav>
+<div class="bloque-menu"></div> <!-- bloque para separar barra lateral de contenido -->
+<!-- COMIENZO BARRA LATERAL -->
+    <header class="header-desktop">
+        <img class="logo" src="../img/logosvg.svg" alt="Icono de Adesignuy">
+    
+        <!-- MENU -->
+        <nav class="menu">
             <ul>
                 <li>
+                    <img src="../img/house-icon.svg" alt="">
                     <a href="../index.html">Inicio</a>
                 </li>
+    
                 <li>
-                    <a href="./blog.html">Blog</a>
+                    <img src="../img/blog-icon.svg" alt="Icono de Blog">
+                    <a href="blog.html">Blog</a>
                 </li>
+    
                 <li>
-                    <a href="./info.html">Sobre mi</a>
+                    <img src="../img/sobremi-icon.svg" alt="Icono Sobre Mi">
+                    <a href="info.html">Sobre mi</a>
                 </li>
+    
                 <li>
-                    <a href="./proyectos.html">Proyectos</a>
+                    <img src="../img/proyectos-icon.svg" alt="Icono de Proyectos">
+                    <a href="proyectos.html">Proyectos</a>
                 </li>
-                <li>
+    
+                <li class="active">
+                    <img src="../img/contacto-icon.svg" alt="Icono contacto">
                     <a href="#">Contacto</a>
                 </li>
             </ul>
         </nav>
-    </header>
-
-        <!-- Filtros de busqueda -->
+        <!-- FIN MENU -->
     
-    <section class="nav-filtros">
-        <article>
-            <button type="button" class="btn btn-primary"
-        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-  Custom button
-</button>
-            <a href="#">Diseño web</a>
-            <a href="#">Diseño UX</a>
-            <a href="#">Diseño UI</a>
-            <a href="#">Tipografía</a>
-            <a href="#">Ilustración</a>
-        </article>
-    </section>
-
-    <!-- Redes sociales -->
-    <footer>
-        <article>
-            <img src="../img/instagram.png" alt="Instagram">
-            <img src="../img/medium.png" alt="Medium">
-            <img src="../img/dribbble.png" alt="Dribbble">
-            <img src="../img/behance.png" alt="Behance">
-            <img src="../img/linkedin.png" alt="Linkdin">
-            <img src="../img/github.png" alt="Github">
-        </article>
-    </footer>
-
-
-    <header class="mobile-menu">
-        <div class="logo">
-            <figure>
-                <img src="../img/logo.png" alt="">
-            </figure>
-        </div>
-        <nav>
+        <!-- MENU FILTROS -->
+        <nav class="filtros">
+            <article>
+                <img src="../img/filtros-icon.svg" alt="Icono de Filtrar">
+                <h4>Filtrar</h4>
+            </article>
             <ul>
                 <li>
-                    <a href="../index.html">Inicio</a>
+                    <a href="">Diseño Web</a>
                 </li>
+
                 <li>
-                    <a href="../pages/blog.html">Blog</a>
+                    <a href="">Diseño UX</a>
                 </li>
+
                 <li>
-                    <a href="../pages/info.html">Sobre mi</a>
+                    <a href="">Diseño UI</a>
                 </li>
+
                 <li>
-                    <a href="../pages/proyectos.html">Proyectos</a>
+                    <a href="">Tipografía</a>
                 </li>
+                
                 <li>
-                    <a href="../pages/contacto.html">Contacto</a>
+                    <a href="">Ilustración</a>
                 </li>
             </ul>
         </nav>
+        <!-- FIN MENU FILTROS -->
 
+        <!-- FOOTER Y REDES -->
+        <footer>
+            <article class="card-index">
+                <h4>ADESIGNUY</h4>
+                <p>¡Hola! Me llamo Dai, soy diseñadora gráfica especializada en el Diseño UX & UI y este es mi portfolio.</p>
+                <div class="card-index-foto"></div>
+                <a href="">CONOCE MI HISTORIA</a>
+            </article>
+
+            <article class="redes">
+                <img src="../img/instagram.png" alt="Logo de Instagram">
+                <img src="../img/linkedin.png" alt="Logo de Linkedin">
+                <img src="../img/dribbble.png" alt="Lodo de Dribbble">
+                <img src="../img/behance.png" alt="Logo de Behance">
+                <img src="../img/medium.png" alt="Logo de Medium">
+                <img src="../img/github.png" alt="Logo de Github">
+            </article>
+        </footer>
+        <!-- FIN FOOTER Y REDES -->
+    </header>
+<!-- FIN BARRA LATERAL -->
+
+<div class="bloque-menu-mobile"></div> 
+<!--  MENU MOBILE -->
+<header class="header-mobile">
+    <img class="logo" src="../img/logosvg.svg" alt="Icono de Adesignuy">
+    <ul>
+        <li>
+            <a href="../index.html">Inicio</a>
+        </li>
+
+        <li>
+            <a href="blog.html">Blog</a>
+        </li>
+
+        <li>
+            <a href="info.html">Sobre mi</a>
+        </li>
+
+        <li>
+            <a href="proyectos.html">Proyectos</a>
+        </li>
+
+        <li class="active">
+            <a href="#">Contacto</a>
+        </li>
+    </ul>
+</header>
+
+<form>
+    <h4>Tengo interes en:</h4>
+
+    <span>
+        Diseño UX
+    </span>
+
+    <span>
+        Diseño UI
+    </span> 
+
+    <span>
+        Branding
+    </span>
+
+    <span>
+        Diseño Web
+    </span>
+
+    <span>
+        Tipografía
+    </span>
+
+    <span>
+        Otro
+    </span>
+    <div class="form-group">
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">    </div>
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+    </div>
+    <div class="form-group">
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Mensaje">
 </div>
-       
-<form class="row g-3 contacto">
-    <div class="col-md-6">
-      <label for="inputEmail4" class="form-label">Email</label>
-      <input type="email" class="form-control" id="inputEmail4">
-    </div>
-    <div class="col-md-6">
-      <label for="inputPassword4" class="form-label">Nombre</label>
-      <input type="password" class="form-control" id="inputPassword4">
-    </div>
-    <div class="col-12">
-      <label for="inputAddress" class="form-label">Motivo de contacto</label>
-      <input type="text" class="form-control" id="inputAddress" placeholder="Escribe aqui">
-    </div>
-    <div class="col-12">
-      <label for="inputAddress2" class="form-label">Mensaje</label>
-      <input type="text" class="form-control inputMensaje" id="inputAddress2" placeholder="">
-    </div>
-    <div class="col-md-8">
-      <label for="inputState" class="form-label">Presupuesto</label>
-      <select id="inputState" class="form-select">
-        <option selected>$ Elige una opcion</option>
-        <option>Hasta U$S1000</option>
-        <option>Hasta US$1500</option>
-        <option>Hasta US$2000</option>
-        <option>Hasta US$3000</option>
-      </select>
-    </div>
-    <div class="col-md-4">
-      <label for="inputZip" class="form-label">Metodo de pago</label>
-      <input type="text" class="form-control" id="inputZip">
-    </div>
-    <div class="col-12">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="gridCheck">
-        <label class="form-check-label" for="gridCheck">
-          Enviarme una copia del mensaje
-        </label>
-      </div>
-    </div>
-    <div class="col-12">
-      <button type="submit" class="btn btn-primary">Enviar</button>
-    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
   </form>
 
-<footer class="footer-mobile">
-    <article>
-        <img src="../img/instagram.png" alt="Instagram">
-        <img src="../img/medium.png" alt="Medium">
-        <img src="../img/dribbble.png" alt="Dribbble">
-        <img src="../img/behance.png" alt="Behance">
-        <img src="../img/linkedin.png" alt="Linkdin">
-        <img src="../img/github.png" alt="Github">
-    </article>
-</footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
