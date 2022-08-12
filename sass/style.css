@@ -38,23 +38,12 @@ body {
   min-height: 100vh !important;
 }
 
-/* COMIENZO ESTILOS PARA HEADER CON SASS*/
+/* COMIENZO ESTILOS PARA HEADER  */
 header {
   position: fixed;
   width: 16rem;
   min-height: 100vh;
   background: linear-gradient(175.74deg, #F2389E 0%, #0E3199 136.52%);
-}
-header nav ul li {
-  text-decoration: none;
-  list-style: none;
-  color: white;
-  padding-left: 0.7rem;
-  display: flex;
-  align-items: center;
-}
-header nav ul li a {
-  padding: 0.6rem;
 }
 
 a {
@@ -69,6 +58,19 @@ ul {
 
 h4 {
   margin-bottom: 0 !important;
+}
+
+header nav ul li {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  padding-left: 0.7rem;
+  display: flex;
+  align-items: center;
+}
+
+header nav ul li a {
+  padding: 0.6rem;
 }
 
 .logo {
@@ -522,6 +524,4 @@ footer article a {
 /* CSS SECTION CONTACTO */
 form {
   color: white !important;
-}
-
-/*# sourceMappingURL=estilos.css.map */
+}/*# sourceMappingURL=style.css.map */

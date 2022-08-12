@@ -1,0 +1,563 @@
+/*Selector Universal*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* FAMILIA TIPOGRÁFICA PRINCIPAL */
+    font-family: 'Roboto', sans-serif;
+    /* FAMILIA TIPOGRÁFICA SECUNDARIA
+    font-family: 'Bodoni Moda', serif;*/
+ }
+
+/* 
+
+//// PALETA DE COLORES ADESIGNUY ////
+
+    BORDO #590222
+    ROSA #F2389E
+    AZUL #113DBF
+    GRIS #131313
+    AMARILLO #F2B749
+
+*/
+
+$bordo: #590222!important;
+$rosa: #F2389E!important;
+$azul: #113DBF!important;
+$gris: #131313!important;
+$amarillo: #F2B749!important;
+
+
+body {
+    display: flex !important;
+    flex-direction: row !important;
+    background: $gris;
+    max-width: 100%!important;
+}
+
+.bloque-menu {
+    min-width: 16.7rem !important;
+    min-height: 100vh !important;
+}
+
+.bloque-menu-info {
+    min-width: 15rem !important;
+    min-height: 100vh !important;
+}
+
+
+/* COMIENZO ESTILOS PARA HEADER CON SASS*/
+header {
+    position: fixed;
+    width: 16rem;
+    min-height: 100vh;
+    background: linear-gradient(175.74deg, #F2389E 0%, #0E3199 136.52%);
+    nav {
+        ul {
+            li {
+                text-decoration: none;
+                list-style: none;
+                color: white;
+                padding-left: 0.7rem;
+                display: flex;
+                align-items: center;
+                a {
+                    padding: 0.6rem;  
+                }
+            }
+        }
+    }
+}
+
+a {
+    text-decoration: none !important;
+    color: white !important;
+}
+
+ul {
+    padding-left: 0rem !important;
+    margin-bottom: 0rem !important;
+}
+
+h4 {
+    margin-bottom: 0 !important;
+}
+
+.logo {
+    width: 141px;
+height: 46px;
+    margin: 0.7rem;
+}
+
+.menu ul li a{
+    transition: 0.5s;
+}
+
+.menu ul li a:hover {
+    letter-spacing: 5px;
+}
+
+.menu ul li img {
+    width: 30px;
+    height: 30px;
+}
+
+.active {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.filtros ul{
+    margin-bottom: 1rem;
+}
+
+.filtros article {
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    padding-left: 0.6rem;
+}
+
+.filtros article img {
+    width: 30px;
+    height: 30px;
+}
+.filtros article h4 {
+    font-size: 16px;
+    padding: 1rem;
+    color: white;
+}
+
+.filtros ul li a {
+    padding: 0.5rem;
+    font-size: 14px;
+}
+
+footer article h4 {
+    font-size: 12px;
+    color: white;
+}
+
+footer article a {
+    font-size: 13px;
+}
+
+.card-index {
+    background: rgba(255, 255, 255, 0.15);
+    margin: 1rem 1rem 1.5rem 1rem;
+    padding: 0.7rem;
+    border-radius: 1rem;
+}
+
+.card-index p{
+    margin: 0.7rem 0;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 14px;
+    color: white;
+}
+
+.card-index-foto {
+    height: 110px;
+    margin: 0.5rem 0;
+    background-image: url(https://i.ibb.co/QmHzj78/dai.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+}
+
+.redes {
+    border-top: 1px solid;
+    border-color: white;
+    margin-top: 1rem;
+    padding: 1rem 1rem 0 1rem;
+}
+
+.redes img {
+    margin: 0.3rem;
+    width: 35px;
+    height: 35px;
+    padding: 4px;
+    border: 1px solid;
+    border-radius: 10rem;
+    border-color: white;
+}
+/* FIN ESTILOS PARA HEADER */
+
+
+
+/* COMIENZO HEADER MOBILE */
+.header-mobile {
+    min-width: 100%;
+    min-height: 1vh;
+}
+
+.bloque-menu-mobile {
+    min-height: 500px !important;
+}
+
+@media (min-width: 844px) {
+    .header-mobile {
+        display: none;
+    }
+    .bloque-menu-mobile {
+        display: none;
+    }
+
+}
+
+@media (max-width: 844px) {
+    .header-desktop {
+        display: none;
+    }
+
+    .bloque-menu {
+        display: none;
+    }
+
+}
+
+
+
+/* COMIENZO SECTION DE POST */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4px; 
+    --bs-gutter-x: 0!important;
+  }
+
+.row>* {
+    padding-right: 0!important;
+    padding-left: 0!important;
+}
+
+
+  /* Crea cuatro columnas iguales que se posicionen una al lado de la otra */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    width: 100%;
+    vertical-align: middle;
+    padding: 10px;
+    border-radius: 1.5rem;   
+  }
+  
+  /* RESPONSIVE: crea un diseño de dos columnas en lugar de cuatro columnas */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* RESPONSIVE: hace que las dos columnas se apilen una encima de la otra en lugar de una al lado de la otra */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+/* FIN SECTION POST */
+
+
+
+
+/* COMIENZO SECTION BLOG */
+
+/* CSS Articulo grande */
+.blog-container {
+    min-width: 80%;
+    display: flex!important;
+    justify-content: space-around;
+}
+
+.blog article div {
+    margin: 1.5rem 0.7rem;
+    padding: 0rem 0.5rem;
+}
+
+.blog article div h3 {
+    padding: 0.5rem 1rem 0 1rem;
+    margin-bottom: 0!important;
+    font-family: 'Bodoni Moda';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 37px;
+}
+
+.card-body p{
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.card {
+    --bs-card-border-color: none!important;
+    --bs-card-border-radius: 1rem!important;
+}
+
+.column img {
+    margin-top: 10px!important;
+}
+
+/* CSS Articulo mediano */
+.blog article div h4 {
+    padding: 0.5rem 1rem 0 1rem;
+    margin-bottom: 0!important;
+    font-family: 'Bodoni Moda';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 37px;
+}
+
+.card-mediano {
+    color: white!important;
+    --bs-card-bg: #393939!important;
+}
+
+/* CSS Articulo pequeño */
+
+.card-menor {
+    --bs-card-bg: none!important;
+    --bs-card-border-color: white!important;
+}
+
+.card-menor div p{
+    color: white;
+    font-family: 'Bodoni Moda'!important;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 38px;
+    letter-spacing: -0.03em;
+
+}
+/* FIN SECTION BLOG */
+
+
+
+/* COMIENZO SECTION SOBRE MI */
+.sobre-mi {
+    display: flex;
+}
+
+.estudios {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    max-width: 55%;
+    max-height: 50%;
+}
+
+.estudios-info {
+    display: flex;
+}
+
+.estudios-info img {
+    margin: 1rem;
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 5rem;
+}
+
+.estudios-info div h4,h5 {
+    margin: 1rem;
+    color: white;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px!important;
+    line-height: 126.69%;
+}
+
+.estudios-info div p {
+    margin: 1rem;
+    color: white;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+/* Css para herramientas */
+.herramientas {
+    width: 45%;
+    max-height: 50%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 5rem 5rem 5rem 0;
+}
+
+.lenguajes img {
+    width: 71px;
+    height: 71px;
+}
+
+.herramientas-info {
+    width: 70%;
+    border-bottom: 1px solid white;
+}
+
+.lenguajes img {
+    margin: 1rem;
+}
+
+.herramientas-info p {
+    margin-top: 1rem;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+
+    /* gradient horizontal */
+    background: linear-gradient(133.69deg, #F2389E -9.45%, #0E3199 88.14%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.herramientas-iconos p {
+    margin-top: 1rem;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 1px;
+
+    /* gradient horizontal */
+
+    background: linear-gradient(133.69deg, #F2389E -9.45%, #0E3199 88.14%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.herramientas-iconos span img{
+    margin-right: 0.5rem;
+    width: 30px;
+    height: 30px;
+    border-radius: 5rem;
+}
+
+/* CSS para sobre mi personal */
+.sobre-mi-personal {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 5rem 5rem 7rem;
+    background-color: #121827;
+}
+
+.sobre-mi-personal h1 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 75px;
+    letter-spacing: 0.5rem;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    color: #121827;
+}
+
+.sobre-mi-personal span {
+    text-shadow: -1px 0 #F2389E, 0 1px #F2389E, 1px 0 #F2389E, 0 -1px #F2389E;
+    color: #121827;
+}
+
+.sobre-mi-personal p {
+    color: white;
+}
+
+.sobre-mi-texto {
+    width: 70%;
+    font-family: 'Bodoni Moda';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.sobre-mi-personal img {
+    width: 111px;
+    height: 36px;
+    margin: 1rem 0;
+}
+
+.sobre-mi-nombre {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 126.69%;
+    /* amarillo */
+    color: #F2B749!important;
+}
+
+.sobre-mi-nombre p:last-child {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 126.69%;
+}
+
+/* COMIENZO SECTION PROYECTOS */
+
+.carousel {
+    min-width: 50%!important;
+}
+
+.container-proyectos {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-background-proyectos{
+    --bs-card-bg: none!important;
+}
+
+.card-background-proyectos div img {
+    width: 100%;
+    left: 584px;
+top: 859px;
+background: url(8.png), url(dai.jpg);
+border-radius: 8px;
+}
+
+.cards-proyectos { 
+    display: flex;
+}
+
+.card-background-proyectos div p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300!important;
+    font-size: 14px!important;
+    line-height: 16px;
+    color: white!important;
+}
+
+.card-background-proyectos div a {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600!important;
+    font-size: 13px!important;
+    line-height: 15px!important;
+    color: #F2B749!important;
+}
+
+/* CSS SECTION CONTACTO */
+form {
+    color: white!important;
+}
+
+
