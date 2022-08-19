@@ -27,9 +27,28 @@ $azul: #113DBF!important;
 $gris: #131313!important;
 $amarillo: #F2B749!important;
 
+/* MAPS GET */
+$links: (
+    linksimple: none;
+    color:#FFFFFF
+); 
+
+/* EXTEND */
+.herramientas-iconos p {
+    @extend .herramientas-info p;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 1px;
+}
+
+/* MIXIN sin parametro*/
+@mixin flex {
+    display: flex !important;
+}
 
 body {
-    display: flex !important;
+    @include flex; /* MIXIN */ 
     flex-direction: row !important;
     background: $gris;
     max-width: 100%!important;
@@ -425,22 +444,6 @@ footer article a {
     background-clip: text;
 }
 
-.herramientas-iconos p {
-    margin-top: 1rem;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 1px;
-
-    /* gradient horizontal */
-
-    background: linear-gradient(133.69deg, #F2389E -9.45%, #0E3199 88.14%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
 
 .herramientas-iconos span img{
     margin-right: 0.5rem;

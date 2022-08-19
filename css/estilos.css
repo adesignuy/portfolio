@@ -58,8 +58,8 @@ header nav ul li a {
 }
 
 a {
-  text-decoration: none !important;
-  color: white !important;
+  text-decoration: map-get($links, linksimple);
+  color: map-get($links, color);
 }
 
 ul {
