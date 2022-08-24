@@ -22,10 +22,15 @@
 
 */
 body {
-  display: flex !important;
+  display: flex;
   flex-direction: row !important;
   background: #131313 !important;
   max-width: 100% !important;
+}
+
+a {
+  list-style: none!important;
+  color: white!important;
 }
 
 .bloque-menu {
@@ -58,8 +63,8 @@ header nav ul li a {
 }
 
 a {
-  text-decoration: map-get($links, linksimple);
-  color: map-get($links, color);
+  text-decoration: none !important;
+  color: white !important;
 }
 
 ul {
@@ -385,21 +390,6 @@ footer article a {
   font-weight: 300;
   font-size: 20px;
   line-height: 23px;
-  /* gradient horizontal */
-  background: linear-gradient(133.69deg, #F2389E -9.45%, #0E3199 88.14%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.herramientas-iconos p {
-  margin-top: 1rem;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 1px;
   /* gradient horizontal */
   background: linear-gradient(133.69deg, #F2389E -9.45%, #0E3199 88.14%);
   -webkit-background-clip: text;
